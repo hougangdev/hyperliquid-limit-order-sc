@@ -1,0 +1,44 @@
+{
+  "name": "hyperliquid-limit-order-sc",
+  "version": "1.0.0",
+  "description": "A decentralized limit order book smart contract for HyperEVM",
+  "main": "index.js",
+  "scripts": {
+    "test": "forge test",
+    "test:verbose": "forge test -vvv",
+    "test:fuzz": "forge test --match-path test/fuzz/",
+    "test:unit": "forge test --match-path test/unit/",
+    "coverage": "forge coverage --no-match-coverage 'test/mocks/'",
+    "build": "forge build",
+    "clean": "forge clean",
+    "fmt": "forge fmt",
+    "fmt:check": "forge fmt --check",
+    "deploy:testnet": "forge script script/Deploy.s.sol --rpc-url $HYPERLIQUID_TESTNET_RPC --broadcast",
+    "deploy:mainnet": "forge script script/Deploy.s.sol --rpc-url $HYPERLIQUID_MAINNET_RPC --broadcast"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/hyperliquid-limit-order-sc.git"
+  },
+  "keywords": [
+    "solidity",
+    "smart-contracts",
+    "limit-order",
+    "orderbook",
+    "hyperliquid",
+    "hyperevm",
+    "defi"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/hyperliquid-limit-order-sc/issues"
+  },
+  "homepage": "https://github.com/your-username/hyperliquid-limit-order-sc#readme",
+  "devDependencies": {
+    "@crytic/slither-analyzer": "^0.10.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
