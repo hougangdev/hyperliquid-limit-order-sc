@@ -54,7 +54,7 @@ A decentralized limit order book smart contract designed for HyperEVM, enabling 
 
 ```bash
 # Clone the repository
-git clone https://github.com/hougangdev/limit-order-sc.git
+git clone https://github.com/hougangdev/hyperliquid-limit-order-sc.git
 cd hyperliquid-limit-order-sc
 
 # Install dependencies
